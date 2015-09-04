@@ -28,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-SITE_ID = 1  # added
+SITE_ID = 1  #  init
 
 
 # Application definition
@@ -40,9 +40,9 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.sites',  # added
+    'django.contrib.sites',  #  init
 
-    # added
+    #  init
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -75,14 +75,14 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                "django.core.context_processors.request",  # added
+                "django.core.context_processors.request",  #  init
             ],
         },
     },
 ]
 
 
-# added
+#  init
 AUTHENTICATION_BACKENDS = global_settings.AUTHENTICATION_BACKENDS + (
     'allauth.account.auth_backends.AuthenticationBackend',
 )
