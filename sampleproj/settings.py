@@ -28,7 +28,13 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-SITE_ID = 1  #  init
+SITE_ID = 1  # init
+
+
+# python -m smtpd -n -c DebuggingServer localhost:1025
+EMAIL_HOST = "localhost"
+EMAIL_PORT = "1025"
+
 
 
 # Application definition
@@ -40,7 +46,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.sites',  #  init
+    'django.contrib.sites',  # init
 
     #  init
     'allauth',
@@ -75,7 +81,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                "django.core.context_processors.request",  #  init
+                "django.core.context_processors.request",  # init
             ],
         },
     },
@@ -119,3 +125,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# django-allauth config
+ACCOUNT_AUTHENTICATION_METHOD = "email"   # email
+ACCOUNT_EMAIL_REQUIRED = True             # email
+ACCOUNT_EMAIL_VERIFICATION = "mandatory"  # email
