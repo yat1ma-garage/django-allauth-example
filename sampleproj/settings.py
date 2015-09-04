@@ -131,3 +131,4 @@ STATIC_URL = '/static/'
 ACCOUNT_AUTHENTICATION_METHOD = "email"   # email
 ACCOUNT_EMAIL_REQUIRED = True             # email
 ACCOUNT_EMAIL_VERIFICATION = "mandatory"  # email
+ACCOUNT_USERNAME_REQUIRED = False         # email
