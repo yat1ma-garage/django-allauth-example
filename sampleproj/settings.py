@@ -55,6 +55,8 @@ INSTALLED_APPS = (
     'allauth.socialaccount.providers.twitter',
 
     'debug_toolbar',
+
+    'accounts',  # customuser
 )
 
 MIDDLEWARE_CLASSES = (
