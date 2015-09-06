@@ -36,7 +36,6 @@ EMAIL_HOST = "localhost"
 EMAIL_PORT = "1025"
 
 
-
 # Application definition
 
 INSTALLED_APPS = (
@@ -112,7 +111,7 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ja'
 
 TIME_ZONE = 'UTC'
 
@@ -121,6 +120,17 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+
+# Locale
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale'),
+)
+
+LANGUAGES = (
+    ('ja', 'Japanese'),
+    ('en', 'English'),
+)
 
 
 # Static files (CSS, JavaScript, Images)
