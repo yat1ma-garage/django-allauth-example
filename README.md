@@ -2,6 +2,7 @@
 
 * Auth with a set of email and pass or Twitter OAuth
 * Force user to fill email.
+* Custome User
 
 
 ## Use
