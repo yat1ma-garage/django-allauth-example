@@ -130,8 +130,10 @@ STATIC_URL = '/static/'
 
 
 # django-allauth config
-AUTH_USER_MODEL = "accounts.CustomUser"   # customuser
 ACCOUNT_AUTHENTICATION_METHOD = "email"   # email
 ACCOUNT_EMAIL_REQUIRED = True             # email
 ACCOUNT_EMAIL_VERIFICATION = "mandatory"  # email
 ACCOUNT_USERNAME_REQUIRED = False         # email
+
+AUTH_USER_MODEL = "accounts.CustomUser"                  # customuser
+ACCOUNT_SIGNUP_FORM_CLASS = "accounts.forms.SignupForm"  # customuser
