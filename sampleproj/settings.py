@@ -137,3 +137,6 @@ ACCOUNT_USERNAME_REQUIRED = False         # email
 
 AUTH_USER_MODEL = "accounts.CustomUser"                  # customuser
 ACCOUNT_SIGNUP_FORM_CLASS = "accounts.forms.SignupForm"  # customuser
+
+ACCOUNT_LOGIN_ON_EMAIL_CONFIRMATION = True  # for convenience
+# ACCOUNT_CONFIRM_EMAIL_ON_GET = True         # for convenience
