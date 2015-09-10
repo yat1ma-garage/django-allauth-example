@@ -141,15 +141,14 @@ STATIC_URL = '/static/'
 
 
 # django-allauth config
+LOGIN_REDIRECT_URL = "/"
 ACCOUNT_AUTHENTICATION_METHOD = "email"         # email
 ACCOUNT_EMAIL_REQUIRED = True                   # email
 ACCOUNT_EMAIL_VERIFICATION = "mandatory"        # email
 ACCOUNT_USERNAME_REQUIRED = False               # email
-ACCOUNT_USER_MODEL_USERNAME_FIELD = None        # email
 ACCOUNT_USER_DISPLAY = lambda user: user.email  # email
-
+SOCIALACCOUNT_AUTO_SIGNUP = False                        # customuser
 AUTH_USER_MODEL = "accounts.CustomUser"                  # customuser
 ACCOUNT_SIGNUP_FORM_CLASS = "accounts.forms.SignupForm"  # customuser
-
 ACCOUNT_LOGIN_ON_EMAIL_CONFIRMATION = True  # for convenience
 # ACCOUNT_CONFIRM_EMAIL_ON_GET = True         # for convenience
